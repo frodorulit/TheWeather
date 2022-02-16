@@ -1,0 +1,11 @@
+{% extends "main/layout.html" %}
+
+{% block title %}
+Новости
+{% endblock %}
+
+{% block headers %}
+       <div class="features">
+           <a href="{% url 'news-delete' info.id %}" class="btn btn-danger">Delete</a>
+       </div>
+{% endblock %}

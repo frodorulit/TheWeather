@@ -1,0 +1,20 @@
+{%extends 'main/layout.html'%}
+
+{%block title%}
+    FAQ
+{%endblock%}
+
+{%block content%}
+    <div class="features">
+            <h1> Instruction for using "The Weather" </h1>
+            <p>1. Нажмите на кнопку "Weather"</p>
+            <p>2. В поле "Введите город" напишите город на русском либо на английском языке, который вам нужен</p>
+            <p>3. В окне "Информация" у вас появится информаия о погода в данном городе </p>
+            <p>4. Для удаления определенного города из окна "Информация" нажмите на кнопку "Удалить запись"</p>
+            <div class="inst">
+            <a href="{% url 'home'%}"><button class=" btn btn-primary" id="home">На главную страницу</a></button>
+            <a href="{% url 'about'%}"><button class=" btn btn-success" id="weather">На страницу "Weather"</a></button>
+            </div>
+        </div>
+    </div>
+{%endblock%}

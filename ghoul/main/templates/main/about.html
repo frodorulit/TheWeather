@@ -1,0 +1,50 @@
+{%extends 'main/layout.html'%}
+
+{%block title%}
+    Погода
+{%endblock%}
+
+{%block content%}
+    <div class="container">
+        <div class="row">
+            <div class="col-5 offset-1">
+                <h1>Выбор города</h1>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div class="pu">
+                        <label for="city">Введите название города на ru/en</label>
+                        {{ form.name }}
+                        <input type="submit" name="send" value="Узнать" class="mt-2 btn btn-success">
+                    </div>
+                </form>
+            </div>
+
+             <div class="mt-2.5 col-4 offset-2">
+                  <div class="info_sin">
+                    <h1>Информация</h1>
+                    </div>
+                    {% for info in all_info %}
+                        <div class="alert alert-info">
+                            <div class="row">
+                                <div class="col-9">
+                                    <b>Город:</b> {{info.city}}<br>
+                                    <b>Температура:</b> {{info.temp}}<sup>o</sup><a>C</a><br>
+                                    <b>Влажность воздуха:</b> {{info.humidity}}<a> г/м³</a><br>
+                                    <b>Скорость ветра:</b> {{info.wind}}<a> м/c</a><br>
+                                 </div>
+                                <div class="col-2 offset-1">
+                                    <img src="http://openweathermap.org/img/w/{{info.icon}}.png" alt="Фото погоды">
+                                 </div>
+                               </div>
+                        </div>
+                        <article>
+                            <div class="tyn">
+                                    <a href="delete/{{info.id}}"><li><button class="btn btn-warning"><i class="fas fa-minus-circle"></i>Удалить запись</li></a></button>
+                            </div>
+                        </article>
+                     {% endfor %}
+                   </div>
+                </div>
+        </div>
+{%endblock%}
+

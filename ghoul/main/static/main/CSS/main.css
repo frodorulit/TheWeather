@@ -1,0 +1,163 @@
+body{
+    background: #439ae0;
+
+}
+
+aside {
+    float: left;
+    background: #2675b5;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color:#ebe4e4;
+    border-right:5px solid #76bfde;
+    min-width: 374px;
+}
+
+
+}
+aside img{
+    float:left;
+    align: bottom;
+    min-width: 130px;
+
+}
+aside .logo{
+    font-size:65px;
+    margin-left: 10px;
+    word-spacing: 70px;
+    top: -20px;
+    position: relative;
+    bottom: 5px;
+    font-weight: bold;
+    min-width: 65px;
+}
+
+aside .logo1{
+    font-size:65px;
+    margin-left: 143px;
+    word-spacing: 70px;
+    top: -80px;
+    position: relative;
+    bottom: 5px;
+    font-weight: bold;
+    min-width: 65px;
+}
+aside h3{
+
+    font-family: Rubik;
+    margin-top: 30px;
+    font-size:43px;
+    min-width: 43px;
+
+}
+
+
+aside ul {list-style: none}
+aside ul li{
+    font-family: Rubik;
+    color: #d1d1d1;
+    font-size:20px;
+    display: block;
+    min-width: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: transform .6s ease;
+}
+aside ul li:hover, aside ul a:hover{
+    color:#b5daeb;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+aside a{
+text-decoration:none;
+}
+
+aside span{
+    font-family: Tokyo Street;
+    font-size: 100px;
+
+}
+main .features {
+    font-family: Rubik;
+    float: left;
+    margin-left: 22%;
+    color: #fff;
+    margin-top: -850px;
+    text-align: center;
+    width: 75%;
+    min-width: 1440px;
+
+}
+
+main .features h1 {font-size: 50px;min-width: 50pxpx;}
+main .features p {max-width: 300px; margin: 20px auto;font-size:17px;min-width: 17px;}
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 36%;
+    text-align: left;
+}
+form{
+    font-family: Rubik;
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.pu{
+    margin-left: -33%;
+    width: 400px;
+    margin-top: -40px;
+}
+.row{
+    font-family: Rubik;
+
+}
+.tyn {
+    list-style: none;
+    margin-left: 430px;
+    margin-top: -54px;
+    position: absolute;
+    width: 200px;
+}
+
+.container {
+    margin-top: 44px;
+    position: fixed;
+    margin-left: 320px;
+    min-width: 1200px;
+}
+}
+
+.wet {
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.info_sin {
+    color: #13366b;
+}
+
+.mess a{
+    list-style: none;
+    font-family: Rubik;
+    color: #edf2fa;
+    font-size:18px;
+    text-decoration: none;
+}
+
+.mess{
+    margin-top: 34px;
+    font-size: 26px;
+}
+.inst a{
+    list-style: none;
+    text-decoration: none;
+    color: #edf2fa;
+}
+
+

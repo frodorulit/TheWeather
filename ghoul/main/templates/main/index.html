@@ -1,0 +1,15 @@
+{%extends 'main/layout.html'%}
+
+{%block title%}
+    Главная страница
+{%endblock%}
+
+{%block content%}
+    <div class="features">
+        <h1> Главная страница</h1>
+        <p> Данное Web-приложение "The Weather" было сделано для прохождения практики в ItechART. В данном приложении мы можете посмотреть информацию о погоде в любом городе.</p>
+        <div class="wet">
+        <a href="{% url 'about'%}"><li><button class="btn btn-warning">Перейти на "The Weather"</li></a></button>
+        </div>
+    </div>
+{%endblock%}
